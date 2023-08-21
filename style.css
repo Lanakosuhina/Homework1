@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000915;
+    font-family: 'Montserrat', sans-serif;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.heading {
+    background-image: url(img/Rectangle\ 1.png);
+}
+
+.heading__title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 217px;
+    padding-bottom: 32px;
+}
+
+.heading__text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    max-width: 481px;
+    padding-bottom: 44px;
+}
+
+.heading__button {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 30px;
+    background: #9C0332;
+    border-style: none;
+    padding: 13px 74px;
+    margin-bottom: 493px; 
+}
