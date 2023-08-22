@@ -50,3 +50,35 @@ body {
     padding: 13px 74px;
     margin-bottom: 493px; 
 }
+.game__box {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+.game {
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 379px;
+    height: 300px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+.game__first {
+    background-image: url(img/Rectangle\ 6.png);
+}
+.game__second {
+    background-image: url(img/Rectangle\ 7.png);
+}
+.game__third {
+    background-image: url(img/Rectangle\ 8.png);
+}
+.game__name {
+    margin: 236px 268px 32px 32px;
+    white-space: nowrap;     
+}
