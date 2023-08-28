@@ -1,84 +1,147 @@
+@media screen and (max-width: 768px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .heading {
+    background-position: 25% 75%;
+    background-size: cover;
+  }
+  .heading__title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .heading__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+    height: 66px;
+    padding-bottom: 32px;
+  }
+  .heading__button {
+    margin-bottom: 238px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .game__box {
+    flex-direction: column;
+  }
+  .game__first {
+    background-image: url(img/Rectangle\ 6.png);
+    width: 343px;
+  }
+  .game__second {
+    background-image: url(img/Rectangle\ 7.png);
+    width: 343px;
+  }
+  .game__third {
+    background-image: url(img/Rectangle\ 8.png);
+    width: 343px;
+  }
+}
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #000915;
-    font-family: 'Montserrat', sans-serif;
+  background-color: #000915;
+  font-family: "Montserrat", sans-serif;
 }
+
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
+
 .heading {
-    background-image: url(img/Rectangle\ 1.png);
+  background-image: url(img/Rectangle\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heading__title {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-top: 217px;
-    padding-bottom: 32px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 217px;
+  padding-bottom: 32px;
 }
 
 .heading__text {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 32px;
-    max-width: 481px;
-    padding-bottom: 44px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  max-width: 481px;
+  padding-bottom: 44px;
 }
 
 .heading__button {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-radius: 30px;
-    background: #9C0332;
-    border-style: none;
-    padding: 13px 74px;
-    margin-bottom: 493px; 
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 30px;
+  background: #9C0332;
+  border-style: none;
+  padding: 13px 74px;
+  margin-bottom: 493px;
 }
+
+.heading__button:hover {
+  cursor: url(img/clarity_cursor-hand-line.svg), pointer;
+}
+
 .game__box {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-    padding-top: 128px;
-    padding-bottom: 128px;
+  display: flex;
+  gap: 32px;
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
+
 .game {
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
-    width: 379px;
-    height: 300px;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
+  width: 378px;
+  height: 300px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
 }
+
+.game:hover {
+  cursor: url(img/clarity_cursor-hand-line.svg), pointer;
+}
+
 .game__first {
-    background-image: url(img/Rectangle\ 6.png);
+  background-image: url(img/Rectangle\ 6.png);
+  width: 379px;
 }
+
 .game__second {
-    background-image: url(img/Rectangle\ 7.png);
+  background-image: url(img/Rectangle\ 7.png);
+  width: 379px;
 }
+
 .game__third {
-    background-image: url(img/Rectangle\ 8.png);
+  background-image: url(img/Rectangle\ 8.png);
+  width: 379px;
 }
+
 .game__name {
-    margin: 236px 268px 32px 32px;
-    white-space: nowrap;     
-}
+  margin: 236px 268px 32px 32px;
+  white-space: nowrap;
+}/*# sourceMappingURL=style.css.map */
