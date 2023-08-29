@@ -73,5 +73,3 @@ alert(`Привет, ${userName}!`);
 
 //done
 
-
-
