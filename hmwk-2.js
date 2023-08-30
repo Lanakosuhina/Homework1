@@ -54,13 +54,13 @@ let user = {
     age: 21,
     isAdmin: "Хотите продолжить?",
 };
-user["city of residence"] = true;
+user["city of residence"] = "Saint Petersburg";
 alert (user["city of residence"]);
 
 user.age = 22;
 console.log(user);
 
-delete user.cityOfResidence; 
+delete user["city of residence"]; 
 
 let info = prompt("Какую информацию хотите узнать о пользователе?", "name","age", "isAdmin");
 alert(user[info]);
@@ -70,5 +70,4 @@ let userName = prompt("Как вас зовут?")
 alert(`Привет, ${userName}!`);
 
 
-//done
 
