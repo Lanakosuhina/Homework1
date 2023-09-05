@@ -1,45 +1,3 @@
-@media screen and (max-width: 768px) {
-  .center {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .heading {
-    background-position: 25% 75%;
-    background-size: cover;
-  }
-  .heading__title {
-    font-size: 32px;
-    text-align: center;
-  }
-  .heading__text {
-    text-align: center;
-    font-size: 14px;
-    line-height: 22px;
-    width: 343px;
-    height: 66px;
-    padding-bottom: 32px;
-  }
-  .heading__button {
-    margin-bottom: 238px;
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-  .game__box {
-    flex-direction: column;
-  }
-  .game__first {
-    background-image: url(img/Rectangle\ 6.png);
-    width: 343px;
-  }
-  .game__second {
-    background-image: url(img/Rectangle\ 7.png);
-    width: 343px;
-  }
-  .game__third {
-    background-image: url(img/Rectangle\ 8.png);
-    width: 343px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -100,6 +58,7 @@ body {
 
 .heading__button:hover {
   cursor: url(img/clarity_cursor-hand-line.svg), pointer;
+  background-color: #EB443F;
 }
 
 .game__box {
@@ -144,4 +103,47 @@ body {
 .game__name {
   margin: 236px 268px 32px 32px;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .heading {
+    background-position: 25% 75%;
+    background-size: cover;
+  }
+  .heading__title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .heading__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+    height: 66px;
+    padding-bottom: 32px;
+  }
+  .heading__button {
+    margin-bottom: 238px;
+    margin-left: 54px;
+    margin-right: 54px;
+  }
+  .game__box {
+    flex-direction: column;
+  }
+  .game__first {
+    background-image: url(img/Rectangle\ 6.png);
+    width: 343px;
+  }
+  .game__second {
+    background-image: url(img/Rectangle\ 7.png);
+    width: 343px;
+  }
+  .game__third {
+    background-image: url(img/Rectangle\ 8.png);
+    width: 343px;
+  }
 }/*# sourceMappingURL=style.css.map */

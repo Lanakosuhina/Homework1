@@ -1,4 +1,4 @@
-@import 'mobile';
+
 
 * {
     margin: 0;
@@ -60,6 +60,7 @@ body {
 
 .heading__button:hover {
     cursor: url(img/clarity_cursor-hand-line.svg), pointer;
+    background-color: #EB443F;
 }
 
 .game__box {
@@ -105,3 +106,4 @@ body {
     margin: 236px 268px 32px 32px;
     white-space: nowrap;
 }
+@import 'mobile';
