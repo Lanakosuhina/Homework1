@@ -47,4 +47,27 @@
         background-image: url(img/Rectangle\ 8.png);
         width: 343px;
     }
+
+    .playground {
+        flex-direction: column;
+        gap: 64px;
+        padding-top: 51px;
+        padding-bottom: 85px;
+
+        &__article {
+            text-align: center;
+            padding-top: 0px;
+        }
+        &__heading {
+            font-size: 32px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &__button {
+            margin-left: 54px;
+            margin-right: 54px;
+        }
+    }
 }
