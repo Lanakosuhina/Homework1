@@ -13,7 +13,7 @@ console.log(checkNumber(5, 8))
 // task 2
 
 let countableNumber = function (c) {
-    if (c % 2 == 0) {
+    if (c % 2 === 0) {
         return alert('Число четное');
     } else {
         return alert('Число нечетное');
@@ -24,16 +24,16 @@ console.log(countableNumber(7))
 // task 3.1.
 
 let squareNumberVariant = function (sum) {
-    return sum * sum;
+    console.log(squareNumberVariant(16));
 }
-console.log(squareNumberVariant(16));
+
 
 // task 3.2.
 
 let num = prompt('Введите число')
 
 function squareNumber(num) {
-    return num * num;
+    return num ** 2;
 }
 
 let variant = squareNumber(num);
@@ -43,7 +43,9 @@ alert(variant);
 
 function userHowOld() {
     let young = prompt('Сколько Вам лет?');
-    if (young < 0) {
+    if (young === null) {
+        alert("Вы нажали отмену");
+    } else if (young < 0 || isNaN(young)) {
         alert("Вы ввели неправильное значение");
     } else {
         if (young <= 12) {
@@ -59,11 +61,15 @@ userHowOld();
 
 function checkCorrect() {
     let correctNumber = prompt('Введите число');
-    let cubeNumber = correctNumber ** 3;
-    if (isNaN(correctNumber)) {
-        return alert('Переданный параметр не является числом');
+    if (correctNumber === null) {
+        alert("Вы нажали отмену");
     } else {
-        return alert(correctNumber + ` в кубе равняется ` + cubeNumber);
+        if (isNaN(correctNumber)) {
+            return alert('Переданный параметр не является числом');
+        } else {
+            let cubeNumber = correctNumber ** 3;
+            return alert(correctNumber + ` в кубе равняется ` + cubeNumber);
+        }
     }
 }
 checkCorrect();
@@ -73,20 +79,20 @@ checkCorrect();
 let circle1 = {
     radius: 3,
     getArea() {
-        return  Math.PI * this.radius ** 2;
+        return Math.PI * this.radius ** 2;
     },
     getPerimeter() {
-    return 2 * Math.PI * this.radius;
-}
+        return 2 * Math.PI * this.radius;
+    }
 }
 let circle2 = {
     radius: 5,
     getArea() {
-    return  Math.PI * this.radius ** 2;
-},
+        return Math.PI * this.radius ** 2;
+    },
     getPerimeter() {
-    return 2 * Math.PI * this.radius;
-}
+        return 2 * Math.PI * this.radius;
+    }
 }
 console.log(circle1.getArea())
 console.log(circle1.getPerimeter())
