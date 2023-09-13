@@ -3,12 +3,13 @@
 const numbers = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] == 10) break;
     console.log(numbers[i]);
+    if (numbers[i] == 10) break;
+    
 }
 
-
 // task 2
+
 const figures = [1, 5, 4, 10, 0, 3];
 console.log(figures.indexOf(4));
 
@@ -17,20 +18,21 @@ console.log(figures.indexOf(4));
 const arr = [1, 3, 5, 10, 20];
 console.log(arr.join(' '));
 
-// // task 4  - doesn't work.....
+// task 4  
 
-// let mass = [];
-// for (let kiss = 0; kiss < 3; kiss++) {
-// 	mass[kiss] = []; 
+let mass = [];
+for (let kiss = 0; kiss < 3; kiss++) {
+	mass.push([]);
 
-// 	for (let js = 0; js < 3; js++) {
-// 		mass[kiss][js] = 1;
-// 	}
-// }
-// console.log(mass);
+	for (let js = 0; js < 3; js++) {
+		mass[kiss][js] = 1;
+	}
+}
+console.log(mass);
 
 
 // task 5
+
 const table = [1, 1, 1];
 
 table.push('2');
@@ -55,7 +57,7 @@ let guess = [9, 8, 7, 6, 5];
 let guessNum = Number(prompt(`Попробуйте угадать число из списка`));
 let arrNumber = guess.includes(guessNum);
 
-if (arrNumber = guessNum) {
+if (arrNumber) {
     alert('Угадал')
 } else {
     alert('Не угадал')
