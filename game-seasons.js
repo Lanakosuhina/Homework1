@@ -15,5 +15,5 @@ function checkSeason() {
         }
     }
 }
-console.log(checkSeason());
+
  
