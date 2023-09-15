@@ -52,7 +52,7 @@ console.log(second);
 
 
 // task 7
-
+ 
 let guess = [9, 8, 7, 6, 5];
 let guessNum = Number(prompt(`Попробуйте угадать число из списка`));
 let arrNumber = guess.includes(guessNum);
