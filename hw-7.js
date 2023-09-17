@@ -65,12 +65,12 @@ console.log(getNumbers(num1, num2));
 
 // task 8
 
-//let myDate = new Date(1694708336311);
+let myDate = new Date(1694708336311);
 console.log(myDate);
 
 // task 9
 
-//let currentDate = new Date();
+let currentDate = new Date();
 let newDate = new Date(currentDate);
 newDate.setDate(currentDate.getDate() + 73);
 
