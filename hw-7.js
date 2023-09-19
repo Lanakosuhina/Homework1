@@ -19,7 +19,7 @@ console.log(Math.round(32.58884)); // round
 
 // task 4
 function getMaxOfArray(num) {
-    return Math.max.apply(null, num);
+    return Math.max(...num);
 }
 
 console.log(getMaxOfArray([52, 53, 49, 77, 21, 32]));
