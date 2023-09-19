@@ -12,8 +12,8 @@ console.log(people.sort((a, b) => a.age - b.age));
 
 
 
-// task 2 Я не поняла, что здесь нужно делать с функцией filter, куда использовать callback? 
-// Или он и является callback функцией, которая потом выводится в консоль?
+// task 2 
+
 
 function isPositive(num) {
     return num > 0;
@@ -21,8 +21,15 @@ function isPositive(num) {
 function isMale(human) {
     return human.gender === 'male';
 }
-function filter() {
-    // писать код тут
+
+function filter(arr, ruleFunction) {
+  const output = [];
+  arr.map(function(number) {
+if(ruleFunction(number)) {
+  output.push(number);
+}
+  });
+  return output;
 }
 
 console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
@@ -34,15 +41,12 @@ const people2 = [
     { name: 'Оксана', gender: 'female' }
 ];
 
-console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+console.log(filter(people2, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 
 
 
 // task 3
 
-// Напишите программу, которая на протяжении 30 секунд каждые 3 секунды 
-// будет выводить в консоль текущую дату. Последней строкой должно выводиться 
-// сообщение «30 секунд прошло».
 function currentDate() {
   console.log(new Date());
 }
@@ -52,12 +56,21 @@ function delayForThreeSeconds(callback) {
     callback();
   }, 3000);
 }
-// дальше я не совсем понимаю, что делать. Первая часть сделана по аналогии с другими заданиями
+
+let alarm = 0;
+let intervalAlarm = setInterval(function() {
+  currentDate();
+  alarm++;
+  if (alarm === 10) {
+  clearInterval(intervalAlarm);
+  console.log('30 секунд прошло');
+  }
+});
 
 // task 4
 
 function delayForSecond(callback) {
-  setTimeout(function() {callback()}, 1000);
+  setTimeout(callback(), 1000);
 }
 
 delayForSecond(function () {
