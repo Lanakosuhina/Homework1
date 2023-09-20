@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="./hw-6.js"></script>
+    <script src="./hw-7.js"></script>
     <title>Homework2</title>
 </head>
 
@@ -16,14 +16,15 @@
     <header class="heading center">
         <h1 class="heading__title">Добро пожаловать <br> на мой сайт !</h1>
         <p class="heading__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и
-           <b>приступай</b></p>
+            <b>приступай</b>
+        </p>
         <button class="heading__button">Поехали!</button>
     </header>
     <main class="game__box center">
         <section class="game game__first">
             <p class="game__name">Игра 1</p>
         </section>
-    <section class="game game__second">
+        <section class="game game__second">
             <p class="game__name">Игра 2</p>
         </section>
         <section class="game game__third">
@@ -33,13 +34,23 @@
     <div class="playground center">
         <div class="playground__article">
             <h2 class="playground__heading">Времена года!</h2>
-            <p class="playground__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <p class="playground__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
+                времени года он относится</p>
             <button class="playground__button" onclick="checkSeason()">Играть!</button>
-           
+
         </div>
         <img src="img/vector__playground.svg" alt="">
     </div>
+    <div class="remember-words center">
+        <img src="img/remember-words__img.svg" alt="">
+        <div class="remember-words__article">
+            <h2 class="remember-words__heading">Запомни слова</h2>
+            <p class="remember-words__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <button class="remember-words__button" onclick="guessTwoWords()">Играть</button>
+        </div>
+    </div>
     <script src="./game-seasons.js"></script>
+    <script src="./remember-word-game.js"></script>
 </body>
 
 </html>
