@@ -25,5 +25,3 @@ function guessTwoWords() {
         alert('Вы не угадали ни одного элемента!'); 
     }
 } 
-
-guessTwoWords();

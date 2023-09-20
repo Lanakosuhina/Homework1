@@ -46,26 +46,25 @@ console.log(filter(people2, isMale)); // Должен выводить [{name: '
 
 
 // task 3
-
 function currentDate() {
   console.log(new Date());
 }
 
 function delayForThreeSeconds(callback) {
-  setTimeout(function() {
-    callback();
-  }, 3000);
+  setTimeout(callback, 30000);
 }
 
 let alarm = 0;
-let intervalAlarm = setInterval(function() {
-  currentDate();
-  alarm++;
-  if (alarm === 10) {
+let intervalAlarm = setInterval(checkAlarm, 3000);
+
+function checkAlarm() {
+if (alarm === 10) {
   clearInterval(intervalAlarm);
   console.log('30 секунд прошло');
-  }
-});
+} else {
+  currentDate();
+  alarm++;
+}}
 
 // task 4
 
