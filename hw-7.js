@@ -19,7 +19,7 @@ console.log(Math.round(32.58884)); // round
 
 // task 4
 function getMaxOfArray(num) {
-    return Math.max.apply(null, num);
+    return Math.max(...num);
 }
 
 console.log(getMaxOfArray([52, 53, 49, 77, 21, 32]));
@@ -65,12 +65,12 @@ console.log(getNumbers(num1, num2));
 
 // task 8
 
-//let myDate = new Date(1694708336311);
+let myDate = new Date(1694708336311);
 console.log(myDate);
 
 // task 9
 
-//let currentDate = new Date();
+let currentDate = new Date();
 let newDate = new Date(currentDate);
 newDate.setDate(currentDate.getDate() + 73);
 
