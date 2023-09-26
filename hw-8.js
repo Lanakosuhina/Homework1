@@ -12,7 +12,7 @@ console.log(people.sort((a, b) => a.age - b.age));
 
 
 
-// task 2 
+// task 2
 
 
 function isPositive(num) {
