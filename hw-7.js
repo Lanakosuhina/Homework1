@@ -6,7 +6,7 @@ console.log(word.toUpperCase());
 // task 2
 
 function searchStart(arr, str) {
-    return arr.filter(item => item.toLowerCase().startsWith(str.toLowerCase()));
+    return arr.filter(item => item.toLowerCase().includes(str.toLowerCase()));
 }
 
 console.log(searchStart(['самолет', 'соль', 'кабачок', 'сом'], 'со'));
